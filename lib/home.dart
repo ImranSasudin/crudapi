@@ -114,13 +114,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         FlatButton(
-                          onPressed: (
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) {
-                                    return FormAddScreen(profile: profile);
-                                  })
-                              )
-                              ) {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                                  return FormAddScreen(profile: profile);
+                                })
+                            )
+                          },
                           child: Text(
                             "Edit",
                             style: TextStyle(color: Colors.blue),
