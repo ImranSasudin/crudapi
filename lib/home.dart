@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_crud_rest/add_profile.dart';
 
+import 'add_profile.dart';
 import 'model/profile.dart';
 import 'rest/rest_profile.dart';
+import 'add_profile.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -119,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 MaterialPageRoute(builder: (context) {
                                   return FormAddScreen(profile: profile);
                                 })
-                            )
+                            );
                           },
                           child: Text(
                             "Edit",

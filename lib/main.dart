@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_crud_rest/add_profile.dart';
-
+import 'add_profile.dart';
 import 'home.dart';
 
 void main() => runApp(App());
@@ -19,7 +18,12 @@ class App extends StatelessWidget {
         key: _scaffoldState,
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-
+            Navigator.push(
+                _scaffoldState.currentContext,
+                MaterialPageRoute(builder: (BuildContext context) {
+                  return FormAddScreen();
+                })
+            );
             // Add your onPressed code here!
           },
           child: Icon(Icons.add),
@@ -34,7 +38,7 @@ class App extends StatelessWidget {
           ),
 
         ),
-        // body: HomeScreen(),
+         body: HomeScreen(),
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:crudapi/model/profile.dart';
 
 class ProfileApiService {
   final String baseUrl = "http://rest.katsini.com/api";
