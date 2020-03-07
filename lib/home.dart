@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'add_profile.dart';
 import 'model/profile.dart';
 import 'rest/rest_profile.dart';
-import 'add_profile.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

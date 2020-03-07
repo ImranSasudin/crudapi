@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:crudapi/model/profile.dart';
 
 class ProfileApiService {
-  final String baseUrl = "http://rest.katsini.com/api";
+  final String baseUrl = "http://fskmjebat.uitm.edu.my/api";
   http.Client client = http.Client();
 
   /**
