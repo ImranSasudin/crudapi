@@ -6,9 +6,7 @@ class ProfileApiService {
   final String baseUrl = "http://fskmjebat.uitm.edu.my/api";
   http.Client client = http.Client();
 
-  /**
-   * Get /profile
-   */
+
   Future<List<Profile>> getProfiles() async {
     final response = await client.get("$baseUrl/participants");
     if (response.statusCode == 200) {
